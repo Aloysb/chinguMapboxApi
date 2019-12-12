@@ -7,25 +7,30 @@
 </head>
 <body>
   <nav>
-    <button>
-      Toggle
-    </button>
-    <div class="search">
-      <h3>Map</h3>
-      <label for="searchbox">Search</label>
-      <input id="searchbox" type="text">
-      <ul>
-        <li>Result 1</li>
-        <li>Result 2</li>
-        <li>Result 3</li>
-        <li>Result 4</li>
-        <li>Result 5</li>
-      </ul>
-    </div>
+    <h3>Map</h3>
+    <label for="searchbox">Search</label>
+    <input id="searchbox" type="text">
+    <ul>
+      <li>Result 1</li>
+      <li>Result 2</li>
+      <li>Result 3</li>
+      <li>Result 4</li>
+      <li>Result 5</li>
+    </ul>
   </nav>
   <main>
-    This is the map
+  <button id = 'toggleNavbar'>
+      Toggle
+  </button>
+  <div id="map">
+    <!-- MAP IS DISPLAY HERE -->
+  </div>
   </main>
 </body>
+<!-- MAPBOX CDN -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css' rel='stylesheet' />
+
 <script src = "script.js"></script>
+
 </html>

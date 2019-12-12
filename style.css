@@ -1,31 +1,58 @@
+/*Set up body reset*/
+
 body {
   margin: 0;
-  box-sizing: border-box;
   position: relative;
   height: 100vh;
   width: 100vw;
+  box-sizing: border-box;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-*{
-  border: 1px solid red;
-}
+
 
 main {
   height: 100%;
   width: 100%;
   z-index: 0;
   background: rgba(255,125,0,0.5);
-  
 }
 
-button {
-  position: absolute;
+#map{
+  height: 100%;
+  width: 100%;
 }
+
+
+/*Button to toggle navbar, always on top*/
+
+button {
+  position: relative;
+  z-index: 99;
+  outline: none;
+}
+
+/*NAVBAR*/
 
 nav{
   position: absolute;
-  z-index: 1;
+  z-index: 98;
   height: 100%;
-  background: rgba(0,0,255,0.5);
+  transition: transform 0.5s ease-in-out;
+  background: rgba(240,240,240,0.7);
 }
+
+/*Collapse on menu button*/
+
+.search {
+}
+
+.collapse {
+  transform: translateX(-200px);
+}
+
+
+
+/*DEV*/
+/*DEVELOPMENT PURPOSE ONLY*/
