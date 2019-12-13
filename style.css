@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   z-index: 0;
   background: rgba(255,125,0,0.5);
@@ -31,6 +31,11 @@ button {
   position: relative;
   z-index: 99;
   outline: none;
+  transition: transform 0.5s ease-in-out;
+  background: rgba(240,240,240,0.7);
+  padding: 1em;
+  font-size: 2em;
+  border: none;
 }
 
 /*NAVBAR*/
@@ -39,9 +44,17 @@ nav{
   position: absolute;
   z-index: 98;
   height: 20%;
+  width: 100%;
   transition: transform 0.5s ease-in-out;
   background: rgba(240,240,240,0.7);
   font-size: 2em;
+}
+
+ul{ 
+  display: flex; 
+  flex-flow: row wrap; 
+  overflow-x: auto;
+  justify-content: space-around;
 }
 
 /*Collapse on menu button*/
@@ -50,10 +63,8 @@ nav{
 }
 
 .collapse {
-  transform: translateX(-200px);
+  transform: translateY(-100%);
 }
-
-
 
 /*DEV*/
 /*DEVELOPMENT PURPOSE ONLY*/
