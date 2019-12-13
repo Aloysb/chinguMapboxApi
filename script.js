@@ -1,16 +1,23 @@
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiYWxveXNiIiwiYSI6ImNrM3cyaTJ1djBzMWszbW8zNTVma3U3NmUifQ.GyO4d7eDbifBiwjwFaVOlg';
-const menuButton = document.querySelector('#toggleNavbar');
-const menu = document.querySelector('nav');
+//Sidebar toggle button 
+const sidebarButton = document.querySelector('#toggleNavbar');
+const sidebar = document.querySelector('nav');
 
-menuButton.addEventListener('click', toggleMenu);
+sidebarButton.addEventListener('click', toggleMenu);
 
 function toggleMenu () {
-  menu.classList.toggle('collapse');
+  sidebar.classList.toggle('collapse');
 }
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWxveXNiIiwiYSI6ImNrM3cyaTJ1djBzMWszbW8zNTVma3U3NmUifQ.GyO4d7eDbifBiwjwFaVOlg';
+
+//Mapbox GL 
+const MAPBOX_TOKEN = 'pk.eyJ1IjoiYWxveXNiIiwiYSI6ImNrM3cyaTJ1djBzMWszbW8zNTVma3U3NmUifQ.GyO4d7eDbifBiwjwFaVOlg';
+
+mapboxgl.accessToken = MAPBOX_TOKEN
 
 let map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v9'
+  style: 'mapbox://styles/mapbox/streets-v9',
+  //Méribel lont/lag
+  center:  [6.5666,45.3968],
+  zoom: 15,
 });
