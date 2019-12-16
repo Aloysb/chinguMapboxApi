@@ -27,17 +27,6 @@ main {
 
 /*Button to toggle navbar, always on top*/
 
-button {
-  position: relative;
-  z-index: 99;
-  outline: none;
-  transition: transform 0.5s ease-in-out;
-  background: rgba(240,240,240,0.7);
-  padding: 1em;
-  font-size: 2em;
-  border: none;
-}
-
 /*NAVBAR*/
 
 nav{
@@ -45,9 +34,23 @@ nav{
   z-index: 98;
   height: 20%;
   width: 100%;
-  transition: transform 0.5s ease-in-out;
-  background: rgba(240,240,240,0.7);
   font-size: 2em;
+  /*display: flex;*/
+  /*flex-flow: column nowrap;*/
+}
+
+.sidebar, button {
+  background: rgba(240,240,240,0.7);
+  transition: transform 0.5s ease-in-out;
+}
+
+button {
+  position: absolute;
+  z-index: 99;
+  outline: none;
+  padding: 1em;
+  font-size: 2em;
+  border: none;
 }
 
 ul{ 

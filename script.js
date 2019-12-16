@@ -1,6 +1,6 @@
 //Sidebar toggle button 
 const sidebarButton = document.querySelector('#toggleNavbar');
-const sidebar = document.querySelector('nav');
+const sidebar = document.querySelector('.sidebar');
 
 //Flag for knowing whether the navbar is collapsed or not.
 let isCollapsed = false;
@@ -16,7 +16,7 @@ function toggleMenu () {
 
   //'Collapse' of the button
   (!isCollapsed) ?
-    sidebarButton.style.transform = `translateY(-${sidebarHeight - buttonHeight}px`:
+    sidebarButton.style.transform = `translateY(-${sidebar.offsetHeight}px)`:
     sidebarButton.style.transform = `translateY(0px)`;
   isCollapsed = !isCollapsed;
 }
