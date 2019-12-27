@@ -2,25 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mapbox API Chingu Solo Project 🚀</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
     <div class="sidebar">
-      <label for="searchbox">Filter results:</label>
-      <input id="searchbox" type="text">
-      <ul>
-        <li>Result 1</li>
-        <li>Result 2</li>
-        <li>Result 3</li>
-        <li>Result 4</li>
-        <li>Result 5</li>
-      </ul>
+      <div class="search">
+        <label for="searchbox">Filter results</label>
+        <input id="searchbox" type="text" placeholder="Type here to search">
+      </div>
+      <div class="results">
+        <ul>
+          <li>Result 1</li>
+          <li>Result 2</li>
+          <li>Result 3</li>
+          <li>Result 4</li>
+          <li>Result 5</li>
+          <li>Result 6</li>
+          <li>Result 7</li>
+          <li>Result 8</li>
+          <li>Result 9</li>
+          <li>Result 10</li>
+        </ul>
+      </div>
     </div>
     <button id = 'toggleNavbar'>
-      Toggle
-  </button>
+      <?xml version="1.0"?>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="7em" height="7em" viewBox="0 0 337.085 337.086" style="enable-background:new 0 0 337.085 337.086;" xml:space="preserve" class=""><g transform="matrix(1 0 0 1 0 0)"><g>
+      <path d="M168.54,0C75.619,0,0.012,75.609,0.012,168.543c0,92.93,75.606,168.543,168.528,168.543   c92.933,0,168.534-75.613,168.534-168.543C337.074,75.609,261.473,0,168.54,0z M271.405,224.327   c-2.407,2.402-5.561,3.615-8.713,3.615c-3.158,0-6.311-1.213-8.719-3.615L168.54,138.9l-85.424,85.427   c-4.816,4.815-12.631,4.815-17.447,0c-4.819-4.815-4.819-12.622,0-17.438l94.152-94.141c4.822-4.815,12.613-4.815,17.426,0   l94.152,94.141C276.221,211.705,276.221,219.512,271.405,224.327z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#814A8E"/>
+</g></g> </svg>
+    </button>
   </nav>
   <main>
   <div id="map">
@@ -28,6 +41,9 @@
   </div>
   </main>
 </body>
+
+<!-- GOOGLE FONT NOTO-->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
 <!-- MAPBOX CDN -->
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js'></script>
