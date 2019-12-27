@@ -6,13 +6,12 @@ const sidebar = document.querySelector('.sidebar');
 //Flag for knowing whether the navbar is collapsed or not.
 let isCollapsed = false;
 
-//reposition on load
-window.addEventListener('load',repositionSidebar);
+//Reposition navBar on load and resize
+window.addEventListener('resize',positionNavBar);
+window.addEventListener('load',positionNavBar);
 
-//reposition on resize
-window.addEventListener('resize', repositionSidebar);
+function positionNavBar() {
 
-function repositionSidebar () {
   //Allow to position the button properly.
   const sidebarHeight = sidebar.offsetHeight;
   const buttonHeight = sidebarButton.offsetHeight;
@@ -26,7 +25,7 @@ function toggleMenu () {
 
   //'Collapse' of the button
   (!isCollapsed) ?
-    sidebarButton.style.transform = `translateY(-${sidebar.offsetHeight}px)`:
+    sidebarButton.style.transform = `translateY(-${sidebar.offsetHeight}px) rotate(180deg)`:
     sidebarButton.style.transform = `translateY(0px)`;
 
   // Rotation of the button img
