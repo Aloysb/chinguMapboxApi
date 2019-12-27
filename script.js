@@ -1,5 +1,5 @@
 //Sidebar toggle button 
-const sidebarButton = document.querySelector('.button-toggle');
+const sidebarButton = document.querySelector('button');
 const sidebarButtonImg = document.querySelector('img');
 const sidebar = document.querySelector('.sidebar');
 
@@ -27,12 +27,6 @@ function toggleMenu () {
   (!isCollapsed) ?
     sidebarButton.style.transform = `translateY(-${sidebar.offsetHeight}px) rotate(180deg)`:
     sidebarButton.style.transform = `translateY(0px)`;
-
-  // Rotation of the button img
-  (!isCollapsed)?
-    sidebarButtonImg.style.transform = `rotate(0deg)`:
-    sidebarButtonImg.style.transform = `rotate(-180deg)`;
-
   
   isCollapsed = !isCollapsed;
 }
