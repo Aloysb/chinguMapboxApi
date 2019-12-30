@@ -49,16 +49,13 @@ nav{
   padding: 1em;
 }
 
-.results, .search{
+.search{
+  display: flex;
   flex: 0 1 100%;
 }
 
 .results{
   overflow-x: hidden;
-}
-
-.search{
-  display: flex;
 }
 
 label, input {
@@ -85,12 +82,12 @@ input::placeholder{
 
 ul{ 
   padding: 0.5em;
-  display: flex; 
+  display: flex;
   flex-flow: row nowrap; 
   overflow-x: auto;
   align-content: center;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 ul::after{
@@ -127,9 +124,6 @@ button {
 }
 
 /*Collapse on menu button*/
-
-.search {
-}
 
 .collapse {
   transform: translateY(-100%);
