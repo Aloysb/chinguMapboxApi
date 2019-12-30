@@ -66,7 +66,6 @@ function fetchMapWithOverlay(overlay){
 
   fetch (`https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/${overlay}${LONG},${LAT},${ZOOM}/${mapWidth}x${mapHeight}@2x?access_token=${MAPBOX_TOKEN}`)
     .then(res => map.src = res.url)
-    .then(console.log(LAT))
     .catch(err => console.log(err))
 }
 
