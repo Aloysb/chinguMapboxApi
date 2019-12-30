@@ -23,7 +23,7 @@ main {
 }
 
 #map{
-  height: 100%;
+  height: 100vh;
   width: 100%;
   transition: transform 0.5s ease-in-out;
 }
@@ -34,6 +34,7 @@ main {
 /*NAVBAR*/
 
 nav{
+  position: absolute;
   z-index: 98;
   width: 100%;
   font-family: 'Noto Sans', sans-serif;
