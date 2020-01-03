@@ -1,3 +1,5 @@
 #Ignore DEV Folder
-
 /DEV/*
+
+#Ignore config
+config.js

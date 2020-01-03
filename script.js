@@ -56,7 +56,7 @@ function fetchMapWithOverlay(overlay){
   const mapWidth = mapContainer.offsetWidth;
   
 
-  const MAPBOX_TOKEN = 'pk.eyJ1IjoiYWxveXNiIiwiYSI6ImNrM3cyaTJ1djBzMWszbW8zNTVma3U3NmUifQ.GyO4d7eDbifBiwjwFaVOlg';
+  const MAPBOX_TOKEN = config.mapbox_token;
   
   //MAP DATA
 
